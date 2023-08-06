@@ -1,0 +1,115 @@
+$background : #161414 ;
+//$background : white;
+$capteur: #127390;
+@font-face {
+    font-family: "izy";
+    src: url("../Assets/font/SpaceGrotesk-Regular.ttf");
+}
+@font-face {
+    font-family: "izyBold";
+    src: url("../Assets/font/SpaceGrotesk-Bold.ttf");
+}
+
+
+
+.All{
+    font-family: "izy";
+    background-color: $background ;
+    color: #e5e5e5;
+}
+
+.menu{
+    z-index: 10;
+    margin-left: 100%;
+    transition: 400ms;
+    background-color: #0d7487;
+    &-list{
+        cursor: pointer;
+    }
+}
+
+.open{
+    margin-left: 0%;
+}
+
+.Header{
+    background-color: #404040a0;
+    .toggle{
+        cursor: pointer;
+    }
+}
+
+
+.Homepage-presentation{
+        font-family: "izyBold";
+}
+
+.portfolio{
+    background-color: #202020;
+    box-shadow: #000000 1px 1px 8px -4px;
+    border-radius: 1rem;
+    transition: 200ms;
+    &:active{
+        transform: scale(0.95);
+    }
+    > img{
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        box-shadow: #ffffff 0px 2px 5px -5px ;
+    }
+}
+
+@media (min-width: 768px) {
+    .portfolio{
+        filter: grayscale(90%);
+        background-color: #202020;
+        box-shadow: #000000 1px 1px 8px -4px;
+        border-radius: 1rem;
+        transition: 300ms;
+        &:hover{
+            filter: grayscale(0%);
+            transform: scale(1.1);
+            box-shadow: rgb(0, 0, 0) 0px 0px 60px -10px;
+            &:active{
+                transform: scale(1.05);
+            }
+        }
+        > img{
+            border-top-left-radius: 1rem;
+            border-bottom-left-radius: 1rem;
+            border-top-right-radius: 0rem;
+            box-shadow: #ffffff 0px 0px 5px -5px ;
+        }
+    }
+    
+}
+
+.area{
+    border-top: gray solid 1px;
+    border-bottom: gray solid 1px;
+}
+button{
+    width: 3.5rem;
+    border: 1px solid gray;
+}
+.backFoot{
+    background-color: #0d7487;
+}
+
+.footer{
+    border-top: 1px solid rgb(24, 117, 160);
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    >  div{
+        > h1{
+            
+            font-size: 1.1rem;
+            text-align: center;
+            margin-bottom: 0.3rem;
+        }
+        > p{
+            margin-left: 5px;
+        }
+    }
+}

@@ -1,0 +1,50 @@
+.dakouma{
+    display: flex;
+    align-items: center;
+}
+
+.tap{
+    align-items: center;
+    border-radius: 2px;
+    margin-left: 0.2rem;
+    margin-bottom: 2px;
+    display: inline-block;
+    width: 1.2rem;
+    height: 3.1rem;
+    background-color: rgb(13, 116, 135);
+    animation-name: clignontant;
+    animation-duration: 1500ms;
+    animation-iteration-count: infinite;
+}
+.bar1{
+    font-size: 3rem;
+    margin-bottom: 6px;
+    margin-left: 5px;
+}
+
+@keyframes clignontant {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@media (min-width: 768px) {
+    .tap{
+        width: 1.5rem;
+        height: 4.7rem;
+        margin-bottom: 4px;
+    }
+    .bar1{
+        font-size: 4.6rem;
+        margin-bottom: 10px;
+        margin-left: 5px;
+    }
+    
+}
+

@@ -1,0 +1,18 @@
+$darkModeBack: rgb(231, 231, 231);
+
+.DarkMode{
+    color: black;
+    background-color: $darkModeBack;
+    .skills-inside-back {
+        background-color: $darkModeBack;
+    }
+    .portfolio {
+        background-color: rgb(255, 255, 255);
+        box-shadow: #000000 0px 0px 8px -3px;
+    }
+}
+
+.headerDarkMode{
+    background-color: #212121ab;
+    
+}
