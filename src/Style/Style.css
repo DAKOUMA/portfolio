@@ -104,6 +104,11 @@ button {
   margin-left: 5px;
 }
 
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5647058824);
+  transition: 2000ms;
+}
+
 @keyframes opacityText {
   from {
     opacity: 0;
